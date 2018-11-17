@@ -1,0 +1,26 @@
+{
+  "name": "Zendesk ack-back",
+  "description": "Update Zendesk tickets to reflect when a PagerDuty incident has been triggered, acknowledged, resolved, etc...",
+  "repository": "https://github.com/ryanhoskin/pdzendesk",
+  "keywords": [
+    "pagerduty",
+    "zendesk"
+  ],
+  "env": {
+    "ZENDESK_USERNAME": {
+      "description": "The username of the Zendesk user that will update the Zendesk ticket."
+    },
+    "ZENDESK_API_TOKEN": {
+      "description": "The API token for your Zendesk account."
+    },
+    "ZENDESK_SUBDOMAIN": {
+      "description": "The name of your Zendesk subdomain, as it appears in the URL."
+    },
+    "PAGERDUTY_API_TOKEN": {
+      "description": "Your 20-character alphanumeric PagerDuty API Access token."
+    },
+    "PAGERDUTY_USER_EMAIL": {
+      "description": "The email address of the user as whom to post notes on the origin PagerDuty incident when necessary"
+    }
+  }
+}
